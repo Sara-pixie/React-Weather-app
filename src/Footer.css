@@ -1,0 +1,13 @@
+.Footer {
+  color: rgba(0, 0, 51, 0.75);
+  display: block;
+  margin: 0 auto;
+}
+.Footer .sara-git-link {
+  color: rgba(0, 0, 51, 0.9);
+  text-decoration: none;
+}
+.Footer .sara-git-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

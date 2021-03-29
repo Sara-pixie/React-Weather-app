@@ -1,0 +1,15 @@
+.Search {
+  width: 100%;
+}
+.Search .searchInput {
+  padding: 5px 20px;
+  background: rgba(255, 255, 255, 0.445);
+  border: 1px solid rgba(255, 255, 255, 0.603);
+  border-radius: 4px;
+  width: 100%;
+  font-size: 20px;
+}
+.Search button {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.75);
+  margin: 5px;
+}

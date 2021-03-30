@@ -3,7 +3,11 @@
   border-radius: 4px;
   background: transparent;
   margin: 50px auto;
-  padding: 15px 25px;
+  padding: 15px 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 51, 0.75);
   max-width: 700px;
+  font-family: "Courgette", cursive;
+}
+.App h1 {
+  margin-bottom: 10px;
 }

@@ -1,13 +1,17 @@
+.GeneralInfo {
+  margin: 0 0 10px 20px;
+}
 .GeneralInfo .city {
   color: rgb(3, 23, 141);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 1px 1px 1px rgba(0, 0, 51, 0.75);
   margin-bottom: 0;
   text-align: left;
+  font-size: 32px;
 }
 .GeneralInfo .date {
   font-size: 23px;
   color: rgb(35, 180, 6);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 1px 1px 1px rgba(0, 0, 51, 0.75);
   margin-top: 3px;
   text-align: left;
 }

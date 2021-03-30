@@ -1,33 +1,62 @@
-.CityWeather h3 {
+.CityWeather {
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: space-around;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 10px;
+}
+@media screen and (min-width: 767px) {
+  .CityWeather {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  .CityWeather h4 {
+    grid-column: span 3;
+  }
+  .CityWeather .WeatherImage .image {
+    padding: 20px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .CityWeather {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+  }
+  .CityWeather h4 {
+    grid-column: span 2;
+  }
+  .CityWeather .WeatherImage {
+    grid-column: span 2;
+  }
+  .CityWeather .WeatherImage .image {
+    padding: 20px 190px;
+    margin-bottom: 20px;
+  }
+  .CityWeather .Temperature {
+    justify-self: end;
+  }
+  .CityWeather .Details {
+    justify-self: start;
+  }
+}
+.CityWeather h4 {
   font-size: 25px;
   text-transform: capitalize;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  margin-bottom: 10px;
 }
-.CityWeather {
-  text-align: center;
-}
-.CityWeather .informationElement {
-  margin: 0 25px;
-}
-.CityWeather .WeatherImage .left {
-  min-width: fit-content;
+.CityWeather .WeatherImage {
+  margin: 0 20px;
 }
 .CityWeather .WeatherImage .image {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(248, 231, 195, 0.3);
   border-radius: 50%;
   font-size: 50px;
-  margin: 0px;
-  padding: 20px 50px;
-}
-.CityWeather .Temperature .temp-units {
-  min-width: fit-content;
 }
 .CityWeather .Temperature .temperature {
   position: relative;
   font-size: 40px;
-  padding-top: 5px;
   margin-right: 5px;
-  margin-bottom: 5px;
 }
 .CityWeather .Temperature .unit {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -38,12 +67,8 @@
   font-weight: bolder;
   font-size: larger;
 }
-.CityWeather .Temperature #celsius:hover,
-.CityWeather .Temperature #fahrenheit:hover {
+.CityWeather .Temperature .celsius:hover,
+.CityWeather .Temperature .fahrenheit:hover {
   cursor: pointer;
   text-decoration: underline;
-}
-.CityWeather .Details .right {
-  display: block;
-  margin: 10px auto;
 }

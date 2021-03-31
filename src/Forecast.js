@@ -4,7 +4,7 @@ import Day from "./Day";
 
 export default function Forecast() {
   return (
-    <div className="Forecast">
+    <div className="Forecast"> Comming soon...<br />
       <Day name="Wednesday" img="🌞" temp="20" />
       <Day name="Thursday" img="🌤" temp="17" />
       <Day name="Friday" img="🌥" temp="16" />

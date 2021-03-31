@@ -1,3 +1,44 @@
 .CurrentCity {
   margin: 5px auto;
 }
+.Loading {
+  margin: 20px;
+}
+.Loading .letter {
+  animation: loading 1s infinite alternate;
+}
+.Loading .letter-2 {
+  animation-delay: 0.5s;
+}
+.Loading .letter-3 {
+  animation-delay: 1s;
+}
+.Loading .letter-4 {
+  animation-delay: 1.5s;
+}
+.Loading .letter-5 {
+  animation-delay: 2s;
+}
+.Loading .letter-6 {
+  animation-delay: 2.5s;
+}
+.Loading .letter-7 {
+  animation-delay: 3s;
+}
+.Loading .letter-8 {
+  animation-delay: 3.5s;
+}
+.Loading .letter-9 {
+  animation-delay: 4s;
+}
+.Loading .letter-10 {
+  animation-delay: 4.5s;
+}
+@keyframes loading {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 28px;
+  }
+}

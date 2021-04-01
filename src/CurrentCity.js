@@ -6,7 +6,7 @@ import CityWeather from "./CityWeather";
 import axios from "axios";
 
 export default function CurrentCity() {
-  let [cityData, setCityData] = useState({});
+  const [cityData, setCityData] = useState({});
   const apiKey = "3bf63f231397bee1a16cfec596591379";
   let city = "New York";
   let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
@@ -24,6 +24,7 @@ export default function CurrentCity() {
       setCityData ({
         ready: true,
         city: response.data.name,
+        date: new Date(response.data.dt*1000),
         temperature: response.data.main.temp,
         feelsLike: response.data.main.feels_like,
         humidity: response.data.main.humidity,

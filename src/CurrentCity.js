@@ -9,7 +9,7 @@ export default function CurrentCity(props) {
   const [cityData, setCityData] = useState({});
   const apiKey = "3bf63f231397bee1a16cfec596591379";
   let city = props.searchInput;
-  let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
   if (cityData.ready){
     return (
       <div className="CurrentCity">
@@ -30,7 +30,7 @@ export default function CurrentCity(props) {
         humidity: response.data.main.humidity,
         wind: response.data.wind.speed,
         description: response.data.weather[0].description,
-        iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+        iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
       });
     }
     axios.get(apiUrl).then(handleResponse);

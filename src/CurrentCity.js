@@ -5,10 +5,10 @@ import GeneralInfo from "./GeneralInfo";
 import CityWeather from "./CityWeather";
 import axios from "axios";
 
-export default function CurrentCity() {
+export default function CurrentCity(props) {
   const [cityData, setCityData] = useState({});
   const apiKey = "3bf63f231397bee1a16cfec596591379";
-  let city = "New York";
+  let city = props.searchInput;
   let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
   if (cityData.ready){
     return (

@@ -21,9 +21,9 @@ export default function CityWeather(props) {
         </div>
         <div className="Details">
             <p>
-                Feels like: <string className="feels-like">{props.cityData.feelsLike}</string>°C <br />
+                Feels like: <string className="feels-like">{Math.round(props.cityData.feelsLike)}</string>°C <br />
                 Humidity: <string className="humidity">{props.cityData.humidity}</string>% <br />
-                Wind: <string className="wind-speed">{props.cityData.wind*3.6}</string>
+                Wind: <string className="wind-speed">{Math.round(props.cityData.wind*3.6)}</string>
                 <string className="speed-unit">km/h</string>
             </p>
         </div>

@@ -51,7 +51,6 @@
 .CityWeather .WeatherImage .image {
   background: rgba(248, 231, 195, 0.3);
   border-radius: 50%;
-  font-size: 50px;
 }
 .CityWeather .Temperature .temperature {
   position: relative;

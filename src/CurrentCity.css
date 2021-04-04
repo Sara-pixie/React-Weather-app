@@ -1,37 +1,77 @@
 .CurrentCity {
   margin: 5px auto;
 }
-.Loading {
+.CurrentCity .Search .searchForm {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 45px 50px;
+  grid-column-gap: 10px;
+}
+.CurrentCity .Search .searchInput {
+  padding: 5px 20px;
+  background: rgba(248, 231, 195, 0.445);
+  border: 1px solid rgba(248, 231, 195, 0.603);
+  border-radius: 4px;
+  grid-column: span 2;
+  font-size: 20px;
+  margin: 0 10px;
+}
+.CurrentCity .Search button {
+  box-shadow: 3px 3px 3px rgba(0, 0, 51, 0.75);
+  margin-top: 5px;
+  height: max-content;
+  max-width: max-content;
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgb(248, 231, 195);
+  font-size: 15px;
+}
+.CurrentCity .Search .searchBtn {
+  background: #266dd8;
+  justify-self: end;
+}
+.CurrentCity .Search .searchBtn:hover {
+  background: #0b5ed7;
+}
+.CurrentCity .Search .myLocationBtn {
+  background: #1e8857;
+  justify-self: start;
+}
+.CurrentCity .Search .myLocationBtn:hover {
+  background: #157347;
+}
+.CurrentCity .Loading {
   margin: 20px;
 }
-.Loading .letter {
+.CurrentCity .Loading .letter {
   animation: loading 1s infinite alternate;
 }
-.Loading .letter-2 {
+.CurrentCity .Loading .letter-2 {
   animation-delay: 0.5s;
 }
-.Loading .letter-3 {
+.CurrentCity .Loading .letter-3 {
   animation-delay: 1s;
 }
-.Loading .letter-4 {
+.CurrentCity .Loading .letter-4 {
   animation-delay: 1.5s;
 }
-.Loading .letter-5 {
+.CurrentCity .Loading .letter-5 {
   animation-delay: 2s;
 }
-.Loading .letter-6 {
+.CurrentCity .Loading .letter-6 {
   animation-delay: 2.5s;
 }
-.Loading .letter-7 {
+.CurrentCity .Loading .letter-7 {
   animation-delay: 3s;
 }
-.Loading .letter-8 {
+.CurrentCity .Loading .letter-8 {
   animation-delay: 3.5s;
 }
-.Loading .letter-9 {
+.CurrentCity .Loading .letter-9 {
   animation-delay: 4s;
 }
-.Loading .letter-10 {
+.CurrentCity .Loading .letter-10 {
   animation-delay: 4.5s;
 }
 @keyframes loading {

@@ -24,19 +24,19 @@ export default function CityWeather(props) {
                     </div>
                     <div className="Temperature">
                         <p>
-                            <string className="temperature">{Math.round(props.cityData.temperature)}</string>
-                            <string className="unit">
-                                    <string className="selected">°C</string>|
+                            <span className="temperature">{Math.round(props.cityData.temperature)}</span>
+                            <span className="unit">
+                                    <span className="selected">°C</span>|
                                     <a href="#"className="fahrenheit" onClick={convertToF}>°F</a>                        
-                            </string>
+                            </span>
                         </p>
                     </div>
                     <div className="Details">
                         <p>
-                            Feels like: <string className="feels-like">{Math.round(props.cityData.feelsLike)}</string>°C <br />
-                            Humidity: <string className="humidity">{props.cityData.humidity}</string>% <br />
-                            Wind: <string className="wind-speed">{Math.round(props.cityData.wind*3.6)}</string>
-                            <string className="speed-unit">km/h</string>
+                            Feels like: <span className="feels-like">{Math.round(props.cityData.feelsLike)}</span>°C <br />
+                            Humidity: <span className="humidity">{props.cityData.humidity}</span>% <br />
+                            Wind: <span className="wind-speed">{Math.round(props.cityData.wind*3.6)}</span>
+                            <span className="speed-unit">km/h</span>
                         </p>
                     </div>
                 </div>
@@ -55,19 +55,19 @@ export default function CityWeather(props) {
                     </div>
                     <div className="Temperature">
                         <p>
-                            <string className="temperature">{Math.round((props.cityData.temperature*9/5)+32)}</string>
-                            <string className="unit">
+                            <span className="temperature">{Math.round((props.cityData.temperature*9/5)+32)}</span>
+                            <span className="unit">
                                     <a href="#"className="celsius" onClick={convertToC}>°C</a>|
-                                    <string className="selected">°F</string>
-                            </string>
+                                    <span className="selected">°F</span>
+                            </span>
                         </p>
                     </div>
                     <div className="Details">
                         <p>
-                            Feels like: <string className="feels-like">{Math.round((props.cityData.feelsLike*9/5)+32)}</string>°F <br />
-                            Humidity: <string className="humidity">{props.cityData.humidity}</string>% <br />
-                            Wind: <string className="wind-speed">{Math.round((props.cityData.wind*3.6)/1.609344)}</string>
-                            <string className="speed-unit">mph</string>
+                            Feels like: <span className="feels-like">{Math.round((props.cityData.feelsLike*9/5)+32)}</span>°F <br />
+                            Humidity: <span className="humidity">{props.cityData.humidity}</span>% <br />
+                            Wind: <span className="wind-speed">{Math.round((props.cityData.wind*3.6)/1.609344)}</span>
+                            <span className="speed-unit">mph</span>
                         </p>
                     </div>
                 </div>

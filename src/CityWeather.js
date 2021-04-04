@@ -4,10 +4,12 @@ import Forecast from "./Forecast";
 
 export default function CityWeather(props) {
     let [units, setUnits] = useState("metric");
-    function convertToF(){
+    function convertToF(event){
+        event.preventDefault();
         setUnits("imperial");
     }
-    function convertToC(){
+    function convertToC(event){
+        event.preventDefault();
         setUnits("metric");
     }
     if (units === "metric"){

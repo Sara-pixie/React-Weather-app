@@ -27,7 +27,7 @@ export default function CityWeather(props) {
                             <span className="temperature">{Math.round(props.cityData.temperature)}</span>
                             <span className="unit">
                                     <span className="selected">°C</span>|
-                                    <a href="#"className="fahrenheit" onClick={convertToF}>°F</a>                        
+                                    <span href="#"className="fahrenheit" onClick={convertToF}>°F</span>                        
                             </span>
                         </p>
                     </div>
@@ -57,7 +57,7 @@ export default function CityWeather(props) {
                         <p>
                             <span className="temperature">{Math.round((props.cityData.temperature*9/5)+32)}</span>
                             <span className="unit">
-                                    <a href="#"className="celsius" onClick={convertToC}>°C</a>|
+                                    <span href="#"className="celsius" onClick={convertToC}>°C</span>|
                                     <span className="selected">°F</span>
                             </span>
                         </p>

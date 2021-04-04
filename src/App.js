@@ -9,16 +9,17 @@ export default function App() {
       <h1>Weather App</h1>
       <CurrentCity />
       <div className="Footer">
-      <a
-        href="https://github.com/Sara-pixie/React-Weather-app"
-        target="_blank"
-        className="sara-git-link"
-        rel="noreferrer"
-      >
-        Open-source Code
-      </a>{" "}
-      <strong>by Sara Paranuk</strong>
-    </div>
+        Open-source code on{" "}
+        <a
+          href="https://github.com/Sara-pixie/React-Weather-app"
+          target="_blank"
+          className="sara-git-link"
+          rel="noreferrer"
+        >
+        GitHub
+        </a>{" "}
+        by Sara Paranuk
+      </div>
     </div>
   );
 }

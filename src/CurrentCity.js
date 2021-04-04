@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import "./CurrentCity.css";
 import GeneralInfo from "./GeneralInfo";
 import CityWeather from "./CityWeather";
-import Forecast from "./Forecast";
 import axios from "axios";
 
 export default function CurrentCity() {
@@ -58,7 +57,6 @@ export default function CurrentCity() {
         <GeneralInfo cityData={cityData}/>
         <hr />
         <CityWeather cityData={cityData}/>
-        <Forecast cityData={cityData}/>
       </div>
     );
   } else {

@@ -62,12 +62,15 @@
   position: relative;
   top: -20px;
 }
+.CityWeather .Temperature a {
+  color: inherit;
+  text-decoration: none;
+}
 .CityWeather .Temperature .selected {
   font-weight: bolder;
   font-size: larger;
 }
 .CityWeather .Temperature .celsius:hover,
 .CityWeather .Temperature .fahrenheit:hover {
-  cursor: pointer;
   text-decoration: underline;
 }

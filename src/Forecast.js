@@ -2,9 +2,9 @@ import React from "react";
 import "./Forecast.css";
 import Day from "./Day";
 
-export default function Forecast() {
+export default function Forecast(props) {
   return (
-    <div className="Forecast"> Comming soon...<br />
+    <div className="Forecast"> Forecast for {props.city} in {props.units} units is comming soon...<br />
       <Day name="Wednesday" img="🌞" temp="20" />
       <Day name="Thursday" img="🌤" temp="17" />
       <Day name="Friday" img="🌥" temp="16" />

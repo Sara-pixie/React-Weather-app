@@ -5,7 +5,9 @@ import CityWeather from "./CityWeather";
 import axios from "axios";
 
 export default function CurrentCity() {
-  let [input, setInput] = useState("Ljubljana");
+  const apiKey = "3bf63f231397bee1a16cfec596591379";
+  let [input, setInput] = useState(null);
+  let [city, setCity] = useState("Ljubljana");
   const [cityData, setCityData] = useState({});
   function handleResponse(response){
     setCityData ({
@@ -23,7 +25,6 @@ export default function CurrentCity() {
     });
   }
   function searchCity(city){
-    const apiKey = "3bf63f231397bee1a16cfec596591379";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
   }
@@ -32,7 +33,22 @@ export default function CurrentCity() {
   }
   function handleSubmit(event){
     event.preventDefault();
+    setCity(input);
     setCityData ({});
+  }
+  function handleMyLocationResponse(response){
+    setCity(response.data.name);
+    setCityData ({});
+  }
+  function handlePosition(position){
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+    axios.get(apiUrl).then(handleMyLocationResponse);
+  }
+  function handleMyLocation(event){
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(handlePosition);
   }
   if (cityData.ready){
     return (
@@ -50,7 +66,7 @@ export default function CurrentCity() {
             <button className="searchBtn" type="submit">
               <i className="fas fa-search"></i> Search
             </button>
-            <button className="myLocationBtn">
+            <button className="myLocationBtn" onClick={handleMyLocation}>
               <i className="fas fa-map-marker-alt"></i> My Location
             </button>
           </form>
@@ -61,7 +77,7 @@ export default function CurrentCity() {
       </div>
     );
   } else {
-    searchCity(input);
+    searchCity(city);
     return (
       <div className="CurrentCity">
         <div className="Search">

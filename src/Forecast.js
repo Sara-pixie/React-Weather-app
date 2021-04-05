@@ -59,12 +59,15 @@ export default function Forecast(props) {
               <button className="hourlyForecastBtn" onClick={handleHourlyForecast}><i className="fas fa-hourglass-half"></i> Hourly Forecast</button>
               <button className="alertsBtn" onClick={handleAlerts}><i className="fas fa-exclamation-triangle"></i> Alerts</button>
             </div>
-            <Day data={dailyForecast[1]} units={units}/>
-            <Day data={dailyForecast[2]} units={units}/>
-            <Day data={dailyForecast[3]} units={units}/>
-            <Day data={dailyForecast[4]} units={units}/>
-            <Day data={dailyForecast[5]} units={units}/>
-            <Day data={dailyForecast[6]} units={units}/>
+            {dailyForecast.map(function(dailyForecast, index){
+              if (index > 0 && index < 7){
+                return (
+                  <span key={index}>
+                    <Day data={dailyForecast} units={units} />
+                  </span>
+                );
+              } else {return(null)}
+            })}
           </div>
         );
       }
@@ -76,12 +79,15 @@ export default function Forecast(props) {
               <button className="hourlyForecastBtn" onClick={closeSections}><i className="fas fa-hourglass-half"></i> Hourly Forecast</button>
               <button className="alertsBtn" onClick={handleAlerts}><i className="fas fa-exclamation-triangle"></i> Alerts</button>
             </div>
-            <Hour data={hourlyForecast[1]} units={units}/>
-            <Hour data={hourlyForecast[2]} units={units}/>
-            <Hour data={hourlyForecast[3]} units={units}/>
-            <Hour data={hourlyForecast[4]} units={units}/>
-            <Hour data={hourlyForecast[5]} units={units}/>
-            <Hour data={hourlyForecast[6]} units={units}/>
+            {hourlyForecast.map(function(hourlyForecast, index){
+              if (index > 0 && index < 7){
+                return (
+                  <span key={index}>
+                    <Hour data={hourlyForecast} units={units} />
+                  </span>
+                );
+              }else {return(null)}
+            })}
           </div>
         );
       }
@@ -93,7 +99,13 @@ export default function Forecast(props) {
               <button className="hourlyForecastBtn" onClick={handleHourlyForecast}><i className="fas fa-hourglass-half"></i> Hourly Forecast</button>
               <button className="alertsBtn" onClick={closeSections}><i className="fas fa-exclamation-triangle"></i> Alerts</button>
             </div>
-            <Alert data={alerts} />
+            {alerts.map(function(alert, index){
+              return (
+                <div key={index}>
+                  <Alert data={alert} />
+                </div>
+              );
+            })}
           </div>
         );
       }
@@ -115,12 +127,15 @@ export default function Forecast(props) {
               <button className="dailyForecastBtn" onClick={closeSections}><i className="fas fa-calendar-day"></i> Daily Forecast</button>
               <button className="hourlyForecastBtn" onClick={handleHourlyForecast}><i className="fas fa-hourglass-half"></i> Hourly Forecast</button>
             </div>
-            <Day data={dailyForecast[1]} units={units}/>
-            <Day data={dailyForecast[2]} units={units}/>
-            <Day data={dailyForecast[3]} units={units}/>
-            <Day data={dailyForecast[4]} units={units}/>
-            <Day data={dailyForecast[5]} units={units}/>
-            <Day data={dailyForecast[6]} units={units}/>
+            {dailyForecast.map(function(dailyForecast, index){
+              if (index > 0 && index < 7){
+                return (
+                  <span key={index}>
+                    <Day data={dailyForecast} units={units} />
+                  </span>
+                );
+              }else {return(null)}
+            })}
           </div>
         );
       }
@@ -131,12 +146,15 @@ export default function Forecast(props) {
               <button className="dailyForecastBtn" onClick={handleDailyForecast}><i className="fas fa-calendar-day"></i> Daily Forecast</button>
               <button className="hourlyForecastBtn" onClick={closeSections}><i className="fas fa-hourglass-half"></i> Hourly Forecast</button>
             </div>
-            <Hour data={hourlyForecast[1]} units={units}/>
-            <Hour data={hourlyForecast[2]} units={units}/>
-            <Hour data={hourlyForecast[3]} units={units}/>
-            <Hour data={hourlyForecast[4]} units={units}/>
-            <Hour data={hourlyForecast[5]} units={units}/>
-            <Hour data={hourlyForecast[6]} units={units}/>
+            {hourlyForecast.map(function(hourlyForecast, index){
+              if (index > 0 && index < 7){
+                return (
+                  <span key={index}>
+                    <Hour data={hourlyForecast} units={units} />
+                  </span>
+                );
+              }else {return(null)}
+            })}
           </div>
         );
       }

@@ -5,7 +5,7 @@ import CityWeather from "./CityWeather";
 import axios from "axios";
 
 export default function CurrentCity() {
-  let [input, setInput] = useState("New York");
+  let [input, setInput] = useState("Ljubljana");
   const [cityData, setCityData] = useState({});
   function handleResponse(response){
     setCityData ({
@@ -33,7 +33,6 @@ export default function CurrentCity() {
   function handleSubmit(event){
     event.preventDefault();
     setCityData ({});
-    searchCity(input);
   }
   if (cityData.ready){
     return (

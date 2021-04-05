@@ -2,7 +2,7 @@ import React from "react";
 import "./GeneralInfo.css";
 
 export default function GeneralInfo(props) {
-  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   let day = days[props.cityData.date.getDay()];
   let hour = props.cityData.date.getHours();
   let minutes = props.cityData.date.getMinutes();

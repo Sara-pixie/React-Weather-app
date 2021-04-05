@@ -40,7 +40,7 @@ export default function CityWeather(props) {
                         </p>
                     </div>
                 </div>
-                <Forecast units={units} city={props.cityData.city} />
+                <Forecast units={units} lon={props.cityData.coordLonditude} lat={props.cityData.coordLatitude} />
             </div>
         );
     } else {
@@ -71,7 +71,7 @@ export default function CityWeather(props) {
                         </p>
                     </div>
                 </div>
-                <Forecast units={units} city={props.cityData.city} />
+                <Forecast units={units} lon={props.cityData.coordLonditude} lat={props.cityData.coordLatitude} />
             </div>
         );
     }

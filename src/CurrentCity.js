@@ -11,6 +11,8 @@ export default function CurrentCity() {
     setCityData ({
       ready: true,
       city: response.data.name,
+      coordLonditude: response.data.coord.lon,
+      coordLatitude: response.data.coord.lat,
       date: new Date(response.data.dt*1000),
       temperature: response.data.main.temp,
       feelsLike: response.data.main.feels_like,

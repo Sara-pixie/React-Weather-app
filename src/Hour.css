@@ -1,4 +1,4 @@
-.Day {
+.Hour {
   border: 1px solid rgba(260, 231, 195, 0.5);
   border-radius: 7px;
   margin: 5px;
@@ -6,15 +6,12 @@
   padding: 10px 0;
 }
 @media screen and (min-width: 768px) {
-  .Day {
+  .Hour {
     display: inline-block;
     width: 98px;
   }
 }
-.Day .image {
+.Hour .image {
   margin: 10px 0;
   width: 50px;
-}
-.Day .minTemp {
-  opacity: 0.7;
 }

@@ -23,9 +23,12 @@
   max-width: max-content;
   padding: 7px 15px;
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(212, 212, 212, 0.1);
   color: rgb(248, 231, 195);
   font-size: 15px;
+}
+.CurrentCity .Search button:hover {
+  cursor: pointer;
 }
 .CurrentCity .Search .searchBtn {
   background: #266dd8;

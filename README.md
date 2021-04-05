@@ -1,5 +1,5 @@
 # React Weather app
-![alt text](https://github.com/Sara-pixie/React-Weather-app/blob/main/thumbnail.png?raw=true)
+![alt text](https://github.com/Sara-pixie/React-Weather-app/main/thumbnail.png?raw=true)
 
 Project for SheCodes React
 # Description

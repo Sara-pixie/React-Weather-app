@@ -6,6 +6,7 @@
   justify-items: center;
   align-items: center;
   margin-top: 10px;
+  overflow: hidden;
 }
 @media screen and (min-width: 767px) {
   .CityWeather {
@@ -28,9 +29,9 @@
   }
   .CityWeather .WeatherImage {
     grid-column: span 2;
+    justify-self: stretch;
   }
   .CityWeather .WeatherImage .image {
-    padding: 20px 190px;
     margin-bottom: 20px;
   }
   .CityWeather .Temperature {

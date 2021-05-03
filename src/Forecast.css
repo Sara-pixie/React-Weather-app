@@ -1,14 +1,17 @@
 .Forecast {
-  border: 1px solid rgba(248, 231, 195, 0.25);
+  border: 1px solid rgba(252, 212, 127, 0.25);
   border-radius: 4px;
   padding: 5px;
-  background: rgba(248, 231, 195, 0.4);
+  background: rgba(255, 219, 142, 0.4);
   margin: 20px 10px 10px;
+  box-shadow: inset 0 0 10px rgba(235, 247, 170, 0.7),
+    0 0 15px rgba(235, 247, 170, 0.7);
+  border: 1px solid rgba(248, 248, 43, 0.5);
 }
 .Forecast .forecastBtns button {
   border: 1px solid rgba(212, 212, 212, 0.1);
-  box-shadow: 3px 3px 3px rgba(0, 0, 51, 0.75);
-  color: rgb(248, 231, 195);
+  box-shadow: 0 0 10px rgba(0, 0, 51, 0.5);
+  color: rgba(255, 219, 142);
   font-size: 15px;
   margin: 5px;
   padding: 7px 15px;
@@ -18,20 +21,26 @@
   cursor: pointer;
 }
 .Forecast .forecastBtns .dailyForecastBtn {
-  background: #266dd8;
+  background: rgb(11, 185, 216);
 }
 .Forecast .forecastBtns .hourlyForecastBtn {
-  background: #1e8857;
+  background: rgb(30, 206, 124);
 }
 .Forecast .forecastBtns .alertsBtn {
   background: rgb(218, 31, 31);
 }
 .Forecast .forecastBtns .dailyForecastBtn:hover {
-  background: #0b5ed7;
+  background: rgb(13, 202, 236);
+  box-shadow: inset 0 0 5px rgba(235, 247, 170, 0.7),
+    0 0 10px rgba(235, 247, 170, 0.7);
 }
 .Forecast .forecastBtns .hourlyForecastBtn:hover {
-  background: #157347;
+  background: rgb(9, 231, 128);
+  box-shadow: inset 0 0 5px rgba(235, 247, 170, 0.7),
+    0 0 10px rgba(235, 247, 170, 0.7);
 }
 .Forecast .forecastBtns .alertsBtn:hover {
-  background: rgb(221, 15, 15);
+  background: rgb(247, 10, 10);
+  box-shadow: inset 0 0 5px rgba(235, 247, 170, 0.7),
+    0 0 10px rgba(235, 247, 170, 0.7);
 }

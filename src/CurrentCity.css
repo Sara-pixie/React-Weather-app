@@ -9,40 +9,48 @@
 }
 .CurrentCity .Search .searchInput {
   padding: 5px 20px;
-  background: rgba(248, 231, 195, 0.445);
+  background: rgba(255, 219, 142, 0.4);
   border: 1px solid rgba(248, 231, 195, 0.603);
   border-radius: 4px;
   grid-column: span 2;
   font-size: 20px;
   margin: 0 10px;
+  box-shadow: inset 0 0 10px rgba(235, 247, 170, 0.7),
+    0 0 15px rgba(235, 247, 170, 0.7);
+  color: rgb(86, 9, 187);
+  text-shadow: 0 0 10px rgb(202, 189, 219), 0 0 10px rgb(120, 67, 189);
 }
 .CurrentCity .Search button {
-  box-shadow: 3px 3px 3px rgba(0, 0, 51, 0.75);
+  box-shadow: 0 0 10px rgba(0, 0, 51, 0.5);
   margin-top: 5px;
   height: max-content;
   max-width: max-content;
   padding: 7px 15px;
   border-radius: 5px;
   border: 1px solid rgba(212, 212, 212, 0.1);
-  color: rgb(248, 231, 195);
+  color: rgba(255, 219, 142);
   font-size: 15px;
 }
 .CurrentCity .Search button:hover {
   cursor: pointer;
 }
 .CurrentCity .Search .searchBtn {
-  background: #266dd8;
+  background: rgb(11, 185, 216);
   justify-self: end;
 }
 .CurrentCity .Search .searchBtn:hover {
-  background: #0b5ed7;
+  background: rgb(13, 202, 236);
+  box-shadow: inset 0 0 5px rgba(235, 247, 170, 0.7),
+    0 0 10px rgba(235, 247, 170, 0.7);
 }
 .CurrentCity .Search .myLocationBtn {
-  background: #1e8857;
+  background: rgb(30, 206, 124);
   justify-self: start;
 }
 .CurrentCity .Search .myLocationBtn:hover {
-  background: #157347;
+  background: rgb(9, 231, 128);
+  box-shadow: inset 0 0 5px rgba(235, 247, 170, 0.7),
+    0 0 10px rgba(235, 247, 170, 0.7);
 }
 .CurrentCity .Loading {
   margin: 20px;

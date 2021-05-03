@@ -54,6 +54,7 @@
 }
 .CurrentCity .Loading {
   margin: 20px;
+  text-shadow: 0 0 10px rgb(202, 189, 219), 0 0 10px rgb(120, 67, 189);
 }
 .CurrentCity .Loading .letter {
   animation: loading 1s infinite alternate;

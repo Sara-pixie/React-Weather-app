@@ -28,6 +28,7 @@ export default function Star(props){
     }
     useEffect(()=>{
         setupStarsArray();
+    // eslint-disable-next-line
     }, [])
     if (ready){
         return ( 

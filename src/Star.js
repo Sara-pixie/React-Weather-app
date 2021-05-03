@@ -36,16 +36,9 @@ export default function Star(props){
                 {stars.map(function(star, index){
                     let random1 = Math.random()*100+"%";
                     let random2 = Math.random()*100+"%";
-                    function getRandomNumb(min, max) {
-                        return Math.random() * (max - min + 1) + min;
-                    }
-                    let random3 = getRandomNumb(1, 5);
-                    let random4 = getRandomNumb(4, 6);
                     let style = {
                         top:random1,
-                        left:random2,
-                        "animationDelay":random3,
-                        "animationDuration":random4
+                        left:random2
                     }
                     return (
                         <div key={index} className={star} style={style}></div>

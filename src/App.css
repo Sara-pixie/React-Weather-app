@@ -11,6 +11,7 @@
 }
 .App h1 {
   margin-bottom: 10px;
+  padding: 10px;
   text-shadow: 0 0 10px rgb(202, 189, 219), 0 0 10px rgb(120, 67, 189);
 }
 .App .Footer {

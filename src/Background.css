@@ -43,3 +43,13 @@
     box-shadow: 0 0 2px 2px rgba(240, 240, 69, 0.5);
   }
 }
+@media screen and (max-width: 767px) {
+  .Background .star:nth-child(5n) {
+    display: none;
+  }
+}
+@media screen and (max-width: 570px) {
+  .Background .star:nth-child(3n) {
+    display: none;
+  }
+}
